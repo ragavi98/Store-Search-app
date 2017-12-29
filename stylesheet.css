@@ -1,0 +1,512 @@
+body {
+    background-image: url("http://www.walldevil.com/wallpapers/w10/material-material-style-android-l-pattern-patterns-minimalism-colorful-simple-background.jpg");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+
+p{
+	font-family: "Fantasy";
+}
+
+h1 {
+	color: #e6005c;
+	font-family: "Courier New";
+	font-weight: bold;
+	font-size: 50px;
+}
+
+h2 {
+    color: #00cc99;
+	font-family: "Courier New";
+	font-weight: bold;
+	font-variant: small-caps;
+}
+
+h3 {
+    color: #ace600;
+	font-family: "Courier New";
+	font-weight: bold;
+	font-variant: small-caps;
+}
+
+i {
+	color: #ff0066;	
+}
+
+b {
+	color: #66ccff;
+}
+
+u {
+	color: #99cc00;
+}
+
+a {
+	font-family: "Fantasy";
+	font-variant: small-caps;
+	}
+
+a:link {
+    color: #595959;
+}
+
+a:visited {
+    color: #660033;
+}
+
+a:hover {
+    color: #ff5050;
+}
+
+.boxed { /* Use this if you want your text to appear in a SQUARE box*/
+  width: 80%;
+  height: 25%;
+  margin-right: auto; /*Margins can be changed to move the box to different spots on the page*/
+  margin-left: auto;
+  margin-top: 135px;
+  margin-bottom: 30px;
+  border: 3px solid #ffff99;
+  background-color: white;
+  text-align: center; /*Text align can be set to left, center, or right*/
+  opacity: 0.7; /*The transparency of the box's background. 0.0 is completely transparent while 1.0 is completely opaque.*/
+  filter: alpha(opacity=80);
+}
+
+.boxed2 { /*Use this if you want the square box to change color upon hovering*/
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  border: 3px solid #ffff99;
+  background-color: white;
+  text-align: center;
+  opacity: 0.7;
+  filter: alpha(opacity=80);
+}
+
+.boxedo { /* Use this if you want your text to appear in a ROUNDED box*/
+  border-radius: 25px;
+  width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 3px solid #ffff99;
+  background-color: white;
+  text-align: center;
+  opacity: 0.9;
+  filter: alpha(opacity=80);
+}
+
+.boxedomap { /* Use this if you want your text to appear in a ROUNDED box*/
+  border-radius: 25px;
+  width: 55%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  border: 3px solid #ffff99;
+  background-color: white;
+  text-align: center;
+  opacity: 0.9;
+  filter: alpha(opacity=80);
+}
+
+.boxedo2 { /*Use this if you want the rounded box to change upon hovering*/
+  border-radius: 25px;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  border: 3px solid #ffff99;
+  background-color: white;
+  text-align: center;
+  opacity: 0.7;
+  filter: alpha(opacity=80);
+}
+
+td {
+	width: 50%;
+}
+
+.circlelogo
+{
+  width:500px;
+  height:500px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  border-radius:50%;
+  border: 3px solid #ffff99;
+  line-height:285px;
+  text-align:center;
+  color: #ace600;
+  font-family: "Impact";
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: 500%;
+  background:url("yellow.png");
+  background-size: 750px auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+.circle
+{
+  width:200px;
+  height:200px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 90px;
+  margin-bottom: 0px;
+  border-radius:50%;
+  border: 3px solid #ffff99;
+  line-height:175px;
+  text-align:center;
+  background:url("foodbag.png");
+  background-size: 200px auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  /*opacity: 0.7;*/
+  filter: alpha(opacity=80);
+}
+
+.circleb
+{
+  width:200px;
+  height:200px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 90px;
+  margin-bottom: 0px;
+  border-radius:50%;
+  border: 3px solid #ffff99;
+  line-height:175px;
+  text-align:center;
+  background:url("holidays.png");
+  background-size: 200px auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+  /*opacity: 0.7;*/
+  filter: alpha(opacity=80);
+}
+
+
+.circle2 /*Use this if you want circle to change upon hovering*/
+{
+  width:200px;
+  height:200px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  border-radius:50%;
+  border: 3px solid #ffff99;
+  line-height:175px;
+  text-align:center;
+  background:#ffffff;
+  opacity: 0.7;
+  filter: alpha(opacity=80);
+}
+
+.circlelogo:hover{
+  width:500px;
+  height:500px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  border-radius:50%;
+  border: 3px solid #ffff99;
+  line-height:285px;
+  text-align:center;
+  color: yellow;
+  font-family: "Impact";
+  font-variant: small-caps;
+  font-size: 450%;
+  background:black;
+  opacity: 0.7;
+  filter: alpha(opacity=80);
+}
+.circlelogo:hover #hidden-element{
+	display: block;
+}
+#hidden-element{
+	display: none;
+}
+.boxed2:hover{
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  border: 3px solid #ffff99;
+  background-color: #ffcc66;
+  text-align: center;
+  opacity: 0.7;
+  filter: alpha(opacity=80);
+}
+
+.boxedo2:hover{
+  border-radius: 25px;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  border: 3px solid #ffff99;
+  background-color: #ffcc66;
+  text-align: center;
+  opacity: 0.7;
+  filter: alpha(opacity=80);
+}
+
+.circle2:hover{
+  width:200px;
+  height:200px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  border-radius:50%;
+  border: 3px solid #ffff99;
+  line-height:175px;
+  text-align:center;
+  background: #ffcc66;
+  opacity: 0.7;
+  filter: alpha(opacity=80);
+}
+
+.imgContainer{ /*Use this if you want to move an image to different spots on the page*/
+	margin-top: 20px;
+	margin-right: 50px;
+    float:right; /*Float can be set to left, right, or none*/
+}
+
+.textContainer{ /*Use this if you want to move text to different spots on the page*/
+	margin-top: 150px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/*This is for the navigation bar.*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+	position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14.5px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #ff4d94;
+}
+
+html,body{height:100%;margin:0;padding:0}
+
+#frame-container {
+	border-radius: 15px;
+    background-color: white;
+	margin-right: auto;
+	margin-left: auto;
+    position: relative;
+    height: 100%;
+    width: 60%;
+    border:5px solid #ffff99;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+#map-container {
+    height: 100%;
+    width: 100%;
+}
+
+/*login*/
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    background-color: #ff4d94;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #1a1a1a;
+}
+
+.signupbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #66ccff;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+.sbutton {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid black;
+    cursor: pointer;
+    width: 20%;
+    background-color: #ff4d94;
+	height: 5%;
+}
+
+.gobutton {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    width: 8%;
+    background-color: #4CAF50;
+	padding: 10px 20px;
+	font-size: 16px;
+}
+
+div#line1 span#a {
+    display:inline;
+	}
+    div#line1:hover span#a {
+        display:none;
+    }
+    div#line1 span#b {
+        display:none;
+    }
+    div#line1:hover span#b {
+        display:inline;
+    }

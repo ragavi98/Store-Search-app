@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Flash Find</title>
+		
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<meta charset="utf-8">
+		<link rel = "stylesheet" href = "stylesheet.css">
+		<style>
+			html, body {
+				height: 80%;
+				margin: 0;
+				padding: 0;
+			}
+			#map {
+				height: 100%;
+			}
+			#floating-panel {
+				position: absolute;
+				top: 10px;
+				left: 25%;
+				z-index: 5;
+				background-color: #fff;
+				padding: 5px;
+				border: 1px solid #999;
+				text-align: center;
+				font-family: 'Roboto','sans-serif';
+				line-height: 30px;
+				padding-left: 10px;
+			}
+		</style>
+	</head>
+	<body>
+	 <ul>
+		<li><a href="http://gwc2.sunny-banana.com/loginhome.html"><img src="Picture1.png" width="30" height="30"></a></li>
+		<li style="float:right"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+		<img src="login-1.png" width="30" height="30"></button></li>
+		<li style="float:right"><a class="active" href="http://gwc2.sunny-banana.com/StoreSearch5test.html"><img src="foundation_magnifying-glass_simple-black_512x512.png" width=30, height=30></a></li>
+	 </ul>
+
+		<div class="boxed"><h1>Store Search</h1></div>
+		<br>
+		<center>
+		<div id="location-panel">
+			<input id="address" type="textbox" value="Search">
+			<input id="loc_submit" type="button" value="Geocode" class="sbutton">
+		</div>
+		<div id="store-panel">
+			<input id="store" type="textbox" value="Walmart">
+			<input id="sto_submit" type="button" value="Store" class="sbutton">
+		</div>
+		<br>
+		<div id="go-panel">
+			<button id = "aboutbtn" type="button" class="gobutton" onclick="window.location.href='http://gwc2.sunny-banana.com/flashfindreal.html'">GO</button>
+		</div></center><br>
+		
+		
+		<div id="frame-container">
+        <div id="map-container">
+		<div id="map"></div>
+		<script>
+			function initMap() {
+				var map = new google.maps.Map(document.getElementById('map'), {
+					zoom: 18,
+					center: {lat: -34.397, lng: 150.644}
+				});
+				var geocoder = new google.maps.Geocoder();
+				document.getElementById('loc_submit').addEventListener('click', function() {
+					geocodeAddress(geocoder, map);
+				});
+			}
+			function geocodeAddress(geocoder, resultsMap) {
+				var address = document.getElementById('address').value;
+				geocoder.geocode({'address': address}, function(results, status) {
+					if (status === 'OK') {
+						resultsMap.setCenter(results[0].geometry.location);
+						var marker = new google.maps.Marker({
+							map: resultsMap,
+							position: results[0].geometry.location
+						});
+					} else {
+						alert('Geocode was not successful for the following reason: ' + status);
+					}
+				});
+			}
+		</script>
+		</div></div>
+		<script async defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCpRIUk9k3_sbmnqd8CBSP04fswgrDOKk&callback=initMap">
+		</script>
+		<br>
+	</body>
+</html>

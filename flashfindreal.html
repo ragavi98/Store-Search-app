@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Flash Find Page 2</title>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<meta charset="utf-8">
+		<link rel = "stylesheet" href = "stylesheet.css">
+		<style>
+			html, body {
+				height: 80%;
+				margin: 0;
+				padding: 0;
+			}
+
+		</style>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>	
+		
+	</head>
+	<body>
+
+		<ul>
+			<li><a href="http://gwc2.sunny-banana.com/loginhome.html"><img src="Picture1.png" width= "30" height="30"></a></li>
+			<li style="float:right"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+			<img src="login-1.png" width="30" height="30"></button></li>
+			<li style="float:right"><a class="active" href="http://gwc2.sunny-banana.com/StoreSearch5test.html"><img src="foundation_magnifying-glass_simple-black_512x512.png" width=30, height=30></a></li>
+	    </ul>
+		<div class="boxed"><h1>Item Finder</h1></div>
+		<center>
+		<div id="id01"></div>
+		
+</center>		
+		<center>
+		
+		<div id="item-panel">
+	<!--input id = "item" type="textbox" onkeypress = "if (event.keyCode==13)document.getElementById('itemBtn').click()"-->
+			<input id="item" type="textbox" value="Search" onkeypress = "if (event.keyCode==13)document.getElementById('itemBtn').click()">
+			<input id = "itemBtn" onclick="getResponse()" type="button" class="sbutton" value="Item">
+		</div>
+		</center><center>
+		<div class="boxedomap">
+		<img src="marker.png" id="marker" alt = "" width = "10" height = "20" style="position: absolute; TOP: 335px; LEFT: 340px">
+		<img id = "floorPlan" src = "walmart_map.gif" alt = "" width = "480" height = "259"></div></center>
+		<script>
+			var category = "starter";
+			function itemButton(category) {
+				if (category == "starter") {
+					var dairy = document.getElementById("marker");
+					dairy.style = "position: absolute; TOP: 335px; LEFT: 340px";
+				}
+				else if (category == "Food") {
+					var dairy = document.getElementById("marker");
+					//dairy.style = "position: absolute; TOP: 100px; LEFT: 380px";
+					//dairy.style = "position: absolute; TOP: 420px; LEFT: 820px";
+					dairy.style = "position: absolute; TOP: 335px; LEFT: 825px";
+					//dairy
+				}
+				else if (category == "Food") {
+					var dairy = document.getElementById("marker");
+					//dairy.style = "position: absolute; TOP: 160px; LEFT: 370px";
+					dairy.style = "position: absolute; TOP: 395px; LEFT: 815px";
+					//grocery
+				}
+				else if (category == "Food") {
+					var dairy = document.getElementById("marker");
+					//dairy.style = "position: absolute; TOP: 230px; LEFT: 390px";
+					dairy.style = "position: absolute; TOP: 465px; LEFT: 835px";
+					//bakery/deli
+				}
+				
+				else if (category == "Baby") {
+					var dairy = document.getElementById("marker");
+					//dairy.style = "position: absolute; TOP: 105px; LEFT: 325px";
+					dairy.style = "position: absolute; TOP: 340px; LEFT: 770px";
+					//baby
+				}
+				else if (category == "Household Essentials") {
+					var dairy = document.getElementById("marker");
+					//dairy.style = "position: absolute; TOP: 145px; LEFT: 340px";
+					dairy.style = "position: absolute; TOP: 380px; LEFT: 785px";
+					//paper & cleaning
+				}
+				else if (category == "Pets") {
+					var dairy = document.getElementById("marker");
+					//dairy.style = "position: absolute; TOP: 160px; LEFT: 340px";
+					dairy.style = "position: absolute; TOP: 395px; LEFT: 785px";
+					//pets
+				}
+				else if ((category == "Books") || (category == "Movies & TV") || (category == "Music")) {
+					var dairy = document.getElementById("marker");
+					//dairy.style = "position: absolute; TOP: 175px; LEFT: 345px";
+					dairy.style = "position: absolute; TOP: 410px; LEFT: 790px";
+					//books & magazines
+				}
+				else if ((category == "Party & Occasions")) {
+					var dairy = document.getElementById("marker");
+					//dairy.style = "position: absolute; TOP: 190px; LEFT: 345px";
+					dairy.style = "position: absolute; TOP: 425px; LEFT: 790px";
+					//cards & party
+				}
+				else if ((category == "Seasonal")) {
+					var dairy = document.getElementById("marker");
+					//dairy.style = "position: absolute; TOP: 210px; LEFT: 345px";
+					dairy.style = "position: absolute; TOP: 445px; LEFT: 790px";
+					}
+					//cards & party
+				else if (category == "Jewelry") {
+					var dairy = document.getElementById("marker");
+					//dairy.style = "position: absolute; TOP: 195px; LEFT: 265px";
+					dairy.style = "position: absolute; TOP: 430px; LEFT: 710px";
+					//jewelry
+				}
+				else if (category == "Clothing") {
+					var dairy = document.getElementById("marker");
+					//dairy.style = "position: absolute; TOP: 150px; LEFT: 265px";
+					dairy.style = "position: absolute; TOP: 385px; LEFT: 710px";
+					//fashion
+				}
+				else if (category == "Clothing") {
+					var dairy = document.getElementById("marker");
+					//dairy.style = "position: absolute; TOP: 95px; LEFT: 275px";
+					dairy.style = "position: absolute; TOP: 330px; LEFT: 720px";
+					//shoes
+				}
+				else if ((category == "Electronics") || (category == "Cell Phones") || (category == "Video Games")) {
+					var dairy = document.getElementById("marker");
+					//dairy.style = "position: absolute; TOP: 95px; LEFT: 240px";
+					dairy.style = "position: absolute; TOP: 330px; LEFT: 685px";
+					//electronics
+				}
+				else if (category == "Toys") {
+					var dairy = document.getElementById("marker");
+					//dairy.style = "position: absolute; TOP: 95px; LEFT: 190px";
+					dairy.style = "position: absolute; TOP: 330px; LEFT: 635px";
+					//toys
+				}
+				else if ((category == "Home") || (category == "Household Essentials")) {
+					var dairy = document.getElementById("marker");
+					//dairy.style = "position: absolute; TOP: 170px; LEFT: 175px";
+					dairy.style = "position: absolute; TOP: 405px; LEFT: 620px";
+					//home
+				}
+				else if ( (category == "Gifts & Registry")) {
+					var dairy = document.getElementById("marker");
+					//dairy.style = "position: absolute; TOP: 220px; LEFT: 290px";
+					dairy.style = "position: absolute; TOP: 455px; LEFT: 735px";
+				}
+				
+				else if (category == "Home") {
+					var dairy = document.getElementById("marker");
+					//dairy.style = "position: absolute; TOP: 145px; LEFT: 175px";
+					dairy.style = "position: absolute; TOP: 380px; LEFT: 620px";
+					//craft
+				}
+				else if (category == "Office") {
+					var dairy = document.getElementById("marker");
+					//dairy.style = "position: absolute; TOP: 125px; LEFT: 175px";
+					dairy.style = "position: absolute; TOP: 345px; LEFT: 615px";
+					//office
+				}
+				else if (category == "Sports & Outdoors") {
+					var dairy = document.getElementById("marker");
+					//dairy.style = "position: absolute; TOP: 90px; LEFT: 155px";
+					dairy.style = "position: absolute; TOP: 325px; LEFT: 600px";
+					//sporting goods
+				}
+				else if (category == "Health") {
+					var dairy = document.getElementById("marker");
+					//dairy.style = "position: absolute; TOP: 230px; LEFT: 180px";
+					dairy.style = "position: absolute; TOP: 465px; LEFT: 625px";
+					//pharmacy
+				}
+				else if (category == "Beauty") {
+					var dairy = document.getElementById("marker");
+					//dairy.style = "position: absolute; TOP: 250px; LEFT: 185px";
+					dairy.style = "position: absolute; TOP: 485px; LEFT: 630px";
+					//hair care
+				}
+				else if (category == "Beauty") {
+					var dairy = document.getElementById("marker");
+					//dairy.style = "position: absolute; TOP: 230px; LEFT: 145px";
+					dairy.style = "position: absolute; TOP: 465px; LEFT: 590px";
+					//cosmetics
+				}
+				else if (category == "Beauty") {
+					var dairy = document.getElementById("marker");
+					//dairy.style = "position: absolute; TOP: 225px; LEFT: 105px";
+					dairy.style = "position: absolute; TOP: 460px; LEFT: 550px";
+					//health & beauty
+				}
+				else if (category == "Home Improvement") {
+					var dairy = document.getElementById("marker");
+					//dairy.style = "position: absolute; TOP: 105px; LEFT: 110px";
+					dairy.style = "position: absolute; TOP: 340px; LEFT: 555px";
+					//fire & tube express
+				}
+				else if (category == "Auto & Tires") {
+					var dairy = document.getElementById("marker");
+					//dairy.style = "position: absolute; TOP: 135px; LEFT: 135px";
+					dairy.style = "position: absolute; TOP: 370px; LEFT: 580px";
+					//auto care
+				}
+				else if (category == "Home Improvement") {
+					var dairy = document.getElementById("marker");
+					//dairy.style = "position: absolute; TOP: 175px; LEFT: 125px";
+					dairy.style = "position: absolute; TOP: 410px; LEFT: 570px";
+					//do it yourself
+				}
+				else if (category == "Patio & Garden") {
+					var dairy = document.getElementById("marker");
+					//dairy.style = "position: absolute; TOP: 225px; LEFT: 50px";
+					dairy.style = "position: absolute; TOP: 460px; LEFT: 495px";
+					//lawn & garden
+				}
+				else if (category == "Photo Center") {
+					var dairy = document.getElementById("marker");
+					//dairy.style = "position: absolute; TOP: 95px; LEFT: 215px";
+					dairy.style = "position: absolute; TOP: 330px; LEFT: 660px";
+					//lawn & garden
+				}
+			}
+			function getResponse(){
+				var item2 = document.getElementById('item').value;
+				var val2 = "";
+				//url1='http://api.walmartlabs.com/v1/stores?format=json&zip=58103&city=Fargo&apiKey=p3ny9kkqdpr9tmebw3a39wa8&callback=?';
+				url1 = 'http://api.walmartlabs.com/v1/search?apiKey=p3ny9kkqdpr9tmebw3a39wa8&query='+item2+'&callback=?';
+				$.getJSON(url1, function(data) {
+					var items = [];
+					items[0] = "";
+					$.each( data, function( key, val ) {
+						if(key == "items"){
+							$.each( val[0], function(key,val) {
+								if (key == 'categoryPath') {
+									for(var i = 0; i < val.length; i++) {
+										if (val[i] == '/') {
+											break;
+										}
+										else {
+											val2 += val[i];
+										}
+									}
+									itemButton(val2);
+									alert(val);
+								}
+							});
+						}
+					});
+					$( "<ul/>", {
+						"class": "my-new-list",
+						html: items.join( "" )
+					}).appendTo( "body" );
+				});
+			}
+		</script>
+	</body>
+</html>
